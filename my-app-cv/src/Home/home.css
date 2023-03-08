@@ -1,0 +1,72 @@
+.nav-bar {
+    background: rgba(0, 0, 0, 0.548);
+    padding: .4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+
+.logo {
+    display: flex;
+    width: 130px;
+    padding-top: 8px;
+}
+
+
+a {
+    font-size: 18px;
+    padding: 15px 10px 15px 10px;
+    color: white;
+    text-decoration: none;
+    margin-right: 3rem;
+
+}
+
+.navbar-right :hover {
+    border-radius: 18px;
+    background: #3c523c;
+  }
+
+.login-nav {
+    background-color: rgb(156, 56, 56);
+    border-radius: 18px;
+}
+
+.navbar-right.active{
+    width: 100%;
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    top: 30%;
+    left: 5%;
+    text-align: center;
+}
+
+.burguer {
+    position: absolute;
+    padding: 50px;
+    right: 1px;
+    top: 1px;
+
+}
+
+
+@media (max-width: 641px) {
+    .navbar-right {
+        display: none;
+    }
+}
+
+@media(min-width: 640px) {
+    .burguer {
+        display: none;
+    }
+    .navbar-right.active {
+        display: none;
+    }
+}
