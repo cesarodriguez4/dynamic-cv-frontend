@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import './home.css'
+import './index.css'
 import logo from '../img/kisspng-curriculum-vitae-management-afacere-cornell-univer-curriculum-vitae-template-5ad9584934a6c2.1741163815241933532157.png';
 import {BurguerButton} from "../burguerbutton/BurguerButton";
 
@@ -22,7 +22,7 @@ function Home() {
                     <div class={`navbar-right ${clicked ? 'active': ''}`}>
                         <a href="/">What me do</a>
                         <a href="/">Contact us</a>
-                        <a href="/" className="login-nav">Login</a>
+                        <a href="/Login" className="login-nav">Login</a>
                     </div>
                 </div>
             </nav>
